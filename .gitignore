@@ -4,6 +4,7 @@
 *.iml
 out
 build
+!gradle-wrapper.jar
 
 # Compiled class file
 *.class
