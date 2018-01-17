@@ -1,6 +1,7 @@
 FROM java:8
 VOLUME /tmp
 ADD / /
+RUN bash -c 'll'
 RUN bash -c 'gradlew build'
 RUN bash -c 'mv /build/libs/product-command*.jar /app.jar'
 RUN bash -c 'touch /app.jar'
