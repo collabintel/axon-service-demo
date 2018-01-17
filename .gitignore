@@ -4,6 +4,7 @@
 *.iml
 out
 gradle
+build
 
 # Compiled class file
 *.class
