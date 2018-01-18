@@ -1,7 +1,7 @@
 buildscript {
     ext {
         springBootVersion = '1.5.9.RELEASE'
-        axonFramework = '3.1'
+        axonFramework = '3.1.2'
     }
     repositories {
         mavenCentral()
@@ -28,7 +28,7 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile(group: "org.axonframework", name: "axon-spring-boot-starter", version: "${axonFramework}")
-//    testCompile('com.h2database:h2')
+//    runtime('com.h2database:h2')
     runtime('mysql:mysql-connector-java')
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile(group: "org.axonframework", name: "axon-test", version: "${axonFramework}")
