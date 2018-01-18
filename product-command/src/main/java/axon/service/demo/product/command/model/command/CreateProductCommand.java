@@ -1,9 +1,12 @@
 package axon.service.demo.product.command.model.command;
 
+import org.axonframework.commandhandling.TargetAggregateIdentifier;
+
 import java.util.Objects;
 
 public class CreateProductCommand {
 
+    @TargetAggregateIdentifier
     private String productId;
     private String productName;
 
